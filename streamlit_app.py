@@ -9,14 +9,14 @@ from PIL import ImageOps
 import pathlib
 
 def main():
-    st.title('Peru Fish Classifier')
+    st.title('Identifica tu carey')
 
     for filename in EXTERNAL_DEPENDENCIES.keys():
         download_file(filename)
     
     model = load_model()
     
-    st.markdown("Fish photo for classification.")
+    st.markdown("Turtle Image for classification.")
     image = st.file_uploader("", IMAGE_TYPES)
     if image:
         image_data = image.read()
@@ -103,7 +103,7 @@ def download_file(file_path):
 IMAGE_TYPES = ["png", "jpg"]
 
 EXTERNAL_DEPENDENCIES = {
-    "perumixed3.pkl": {
+    "RedCarey.pkl": {
         "url": "https://www.dropbox.com/s/31e6wuwrlm66sco/perumixed3.pkl?dl=1",
         "size": 179319095
     }
