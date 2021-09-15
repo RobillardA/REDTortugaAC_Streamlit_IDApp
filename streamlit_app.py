@@ -9,7 +9,7 @@ from PIL import ImageOps
 import pathlib
 
 def main():
-    st.title('Identifica tu carey')
+    st.title('Identifica tu carey [BETA]')
 
     for filename in EXTERNAL_DEPENDENCIES.keys():
         download_file(filename)
