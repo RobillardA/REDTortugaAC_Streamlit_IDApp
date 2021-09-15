@@ -56,7 +56,7 @@ def load_model():
     plt = platform.system()
 
     if plt == 'Linux' or plt == 'Darwin': pathlib.WindowsPath = pathlib.PosixPath
-    inf_model = load_learner('EPH.pkl', cpu=True)
+    inf_model = load_learner('EPH1.pkl', cpu=True)
 
     return inf_model
 
@@ -103,9 +103,9 @@ def download_file(file_path):
 IMAGE_TYPES = ["png", "jpg"]
 
 EXTERNAL_DEPENDENCIES = {
-    "EPH.pkl": {
-        "url": "https://www.dropbox.com/s/ecq19jppc8ky9t5/EPH.pkl?dl=1",
-        "size": 179315679
+    "EPH1.pkl": {
+        "url": "https://www.dropbox.com/s/lpoq5d9z1elx94y/EPH1.pkl?dl=1",
+        "size": 179308343
     }
 }
 
