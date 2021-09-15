@@ -105,7 +105,7 @@ IMAGE_TYPES = ["png", "jpg"]
 EXTERNAL_DEPENDENCIES = {
     "EPH.pkl": {
         "url": "https://www.dropbox.com/s/ecq19jppc8ky9t5/EPH.pkl?dl=1",
-        "size": 179319095
+        "size": 179315679
     }
 }
 
