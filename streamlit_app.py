@@ -17,7 +17,7 @@ def main():
     model = load_model()
     
     st.markdown("Turtle Image for classification.")
-    image = st.file_uploader("", IMAGE_TYPES)
+    image = st.sidebar.file_uploader("", IMAGE_TYPES, accept_multiple_files = True)
     if image:
         image_data = image.read()
         st.image(image_data, use_column_width=True)
